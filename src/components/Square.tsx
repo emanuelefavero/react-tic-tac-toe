@@ -1,7 +1,11 @@
-export default function Square() {
+interface Props {
+  value: string
+}
+
+export default function Square({ value }: Props) {
   return (
     <>
-      <button className='square'>1</button>
+      <button className='square'>{value}</button>
     </>
   )
 }
