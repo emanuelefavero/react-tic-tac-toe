@@ -18,8 +18,19 @@ export default function Board() {
     setXIsNext(!xIsNext) // toggle the next player
   }
 
+  // Show the winner or the next player
+  // TIP: Since the component will re-render when the state changes and the status variable directly depends on the squares state, there is no need to use useEffect for defining the status variable
+  const winner = calculateWinner(squares)
+  let status
+  if (winner) {
+    status = `Winner: ${winner}`
+  } else {
+    status = `Next player: ${xIsNext ? 'X' : 'O'}`
+  }
+
   return (
     <>
+      <div className='text-center font-bold mb-4'>{status}</div>
       <div className='board'>
         {squares.map((value, index) => (
           <Square
