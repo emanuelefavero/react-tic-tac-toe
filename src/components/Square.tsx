@@ -1,11 +1,17 @@
-interface Props {
-  value: string
-}
+import { useState } from 'react'
 
-export default function Square({ value }: Props) {
+export default function Square() {
+  const [value, setValue] = useState('')
+
+  const handleClick = () => {
+    setValue('X')
+  }
+
   return (
     <>
-      <button className='square'>{value}</button>
+      <button className='square' onClick={handleClick}>
+        {value}
+      </button>
     </>
   )
 }
