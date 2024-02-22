@@ -5,6 +5,10 @@ This is a simple tic-tac-toe game built with React
 > Note: This project is built with the Vite TypeScript template
 > It also uses Tailwind CSS for styling
 
+### Screenshot
+
+<img src="screenshot.png" alt="screenshot" width="300">
+
 ## Getting Started
 
 To get started, clone the repository and run the following commands:
@@ -28,3 +32,7 @@ npm run build
 - [React](https://reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
+
+## License
+
+- [MIT](LICENSE.md)
